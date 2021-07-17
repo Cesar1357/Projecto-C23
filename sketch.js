@@ -84,7 +84,7 @@ function draw() {
 		Matter.Body.translate(packageBody, {x:8,y:0})
 	} 
 	
-	if(keyDown("DOWN_ARROW")W){
+	if(keyDown("DOWN_ARROW")){
 		Matter.Body.setStatic(packageBody,false);
 	}
 	
