@@ -74,17 +74,17 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
 
-	if(keyCode === LEFT_ARROW){
-		helicopterSprite.x=helicopterSprite.x -20;
-		Matter.Body.translate(packageBody, {x:-20,y:0})
+	if(keyDown("LEFT_ARROW")){
+		helicopterSprite.x=helicopterSprite.x -8
+		Matter.Body.translate(packageBody, {x:-8,y:0})
 	}  
 
-	if(keyCode === RIGHT_ARROW){
-		helicopterSprite.x=helicopterSprite.x +20;
-		Matter.Body.translate(packageBody, {x:20,y:0})
+	if(keyDown("RIGHT_ARROW")){
+		helicopterSprite.x=helicopterSprite.x +8;
+		Matter.Body.translate(packageBody, {x:8,y:0})
 	} 
 	
-	if(keyCode === DOWN_ARROW){
+	if(keyDown("DOWN_ARROW")W){
 		Matter.Body.setStatic(packageBody,false);
 	}
 	
